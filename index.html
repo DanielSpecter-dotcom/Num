@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Me das tu número?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="pregunta" class="card">
+    <h1>¿Me das tu número?</h1>
+    <div class="botones">
+      <button id="si">Sí</button>
+      <button id="no">No</button>
+    </div>
+  </main>
+
+  <form id="form" class="card" hidden>
+    <label for="numero">Ingresa tu número:</label>
+    <input id="numero" name="numero" type="tel" required pattern="[0-9+\s-]{6,}" autocomplete="tel">
+    <button type="submit">Enviar</button>
+    <p id="estado"></p>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
